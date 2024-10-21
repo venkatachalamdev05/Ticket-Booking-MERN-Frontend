@@ -55,7 +55,7 @@ const SeatLayout = (props) => {
     }
 
     // Create an order on the server
-    const result = await axios.post('http://localhost:5000/api/create-order', { amount: selectedSeats.length * 10000 }); // Amount in paise (₹100 per seat)
+    const result = await axios.post('https://ticket-booking-mern-backend.onrender.com/api/create-order', { amount: selectedSeats.length * 10000 }); // Amount in paise (₹100 per seat)
 
     if (!result) {
       alert("Server error. Unable to create an order.");

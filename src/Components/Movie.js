@@ -10,7 +10,7 @@ const Movie = (props) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get("http://localhost:5000/movie-list")
+        axios.get("https://ticket-booking-mern-backend.onrender.com/movie-list")
             .then((result) => {
                 setMovieList(result.data);
             })

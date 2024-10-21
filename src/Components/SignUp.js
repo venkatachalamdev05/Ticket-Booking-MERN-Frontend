@@ -36,7 +36,7 @@ function SignUp() {
     // Clear error message if passwords match
     setErrorMessage('');
 
-    axios.post('http://localhost:5000/signup-user', formData)
+    axios.post('https://ticket-booking-mern-backend.onrender.com/signup-user', formData)
       .then((result) => {
         // Check if the response is successful
         if (result.data.message === "User successfully created") {

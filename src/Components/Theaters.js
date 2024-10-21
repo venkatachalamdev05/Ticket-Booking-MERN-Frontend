@@ -15,7 +15,7 @@ const Theaters = (props) => {
   const modalRef = useRef(null);  // Create a ref for the modal
 
   useEffect(() => {
-    axios.get("http://localhost:5000/theatersList")
+    axios.get("https://ticket-booking-mern-backend.onrender.com/theatersList")
       .then((result) => {
         setTheaterDetails(result.data);
       })
