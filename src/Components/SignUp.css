@@ -1,0 +1,32 @@
+/* SignUp.css */
+
+/* Target the .signup-page specifically */
+.signup-page,.signin-page {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-3d-render-of-online-ticketing-for-movies-image_3738846.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the card semi-transparent */
+.card {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-family: 'Arial', sans-serif;
+  color: #d32f2f; /* Red color similar to BookMyShow */
+}
+
+.card-title {
+  font-weight: 400;
+}
+
+/* Remove global body styling from affecting the home page */

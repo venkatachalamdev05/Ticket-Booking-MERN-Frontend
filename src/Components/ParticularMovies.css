@@ -1,0 +1,110 @@
+
+/* Styling for the movie card */
+.particular-movie-container {
+    display: flex;
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: #ffffff; /* White background for clean look */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for elevation effect */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px); /* Optional: A slight blur to separate card from background */
+}
+
+.particular-movie-container:hover {
+    transform: translateY(-5px); /* Slight hover effect for interactivity */
+}
+
+/* Movie poster styling */
+.movie-poster {
+    width: 480px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+    transition: transform 0.3s ease;
+}
+
+.movie-poster img:hover {
+    transform: scale(1.05); /* Subtle zoom-in effect */
+}
+
+/* Movie details styling */
+.movie-details {
+    flex: 2;
+    padding: 30px;
+    background: linear-gradient(to right, #f7f8fa, #eef2f7); /* Light gradient background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333; /* Darker color for prominent text */
+}
+
+.movie-synopsis {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6; /* Increased line height for readability */
+    color: #555; /* Lighter text color for contrast */
+}
+
+.movie-release-date,
+.movie-rating,
+.movie-duration,
+.movie-language,
+.movie-genre,
+.movie-cast,
+.movie-director {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #666; /* Muted color for less important info */
+}
+
+/* Button styling */
+.btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: #d32f2f;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b71c1c; /* Darker shade on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .particular-movie-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        max-width: 100%;
+    }
+
+    .movie-poster {
+        max-width: 100%; /* Full width for poster on small screens */
+    }
+
+    .movie-details {
+        padding: 20px;
+    }
+
+    .movie-title {
+        font-size: 2rem;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}

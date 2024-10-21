@@ -1,0 +1,83 @@
+/* Container styling */
+.seat-layout-container {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Screen Indicator Styling */
+  .screen-indicator {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .screen-indicator p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .screen-bar {
+    width: 40%;
+    height: 12px;
+    background-color: #4d83a5;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; /* Rounded edges at the top */
+  }
+  
+  /* Seat grid styling */
+  .seat-grid {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 30px;
+  }
+  
+  /* Seat row styling */
+  .seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Individual seat styling */
+  .seat {
+    width: 60px;  /* Increased size */
+    height: 60px; /* Increased size */
+    border: 2px solid #ccc;
+    margin: 10px; /* Increased margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px; /* More rounded corners */
+  }
+  
+  .seat.available {
+    background-color: #fff;
+  }
+  
+  .seat.selected {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .seat:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Selected seats display */
+  .selected-seats {
+    margin-top: 30px;
+  }
+  
+  .selected-seats h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .selected-seats p {
+    font-size: 18px;
+    color: #666;
+  }
+  

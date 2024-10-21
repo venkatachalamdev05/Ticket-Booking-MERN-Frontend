@@ -1,0 +1,119 @@
+/* Home Page Styles */
+.home-container {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.hero-section-sub {
+    background-color: #70515178;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+
+
+.hero-section {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-3d-render-of-online-ticketing-for-movies-image_3738846.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.movie-card{
+    height: 720px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 480px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-text {
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis */
+    display: -webkit-box; /* For flexbox layout */
+    -webkit-box-orient: vertical; /* Set orientation */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        padding: 80px 20px;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .hero-section {
+        padding: 50px 20px;
+        height: 45vh;
+    }
+}
