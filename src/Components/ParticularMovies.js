@@ -11,11 +11,12 @@ const ParticularMovies = (props) => {
     const [selectedMovie, setSelectedMovie] = useState(null);
 
     useEffect(() => {
-        localStorage.setItem("movie",title)
+        
         axios.get(`https://ticket-booking-mern-backend.onrender.com/movie-list/${title}`)
             .then((result) => {
                 // Access the first movie in the response array
                 setSelectedMovie(result.data[0]);
+                localStorage.setItem("movie",result.data[0].title)
             })
             .catch((error) => {
                 console.error("Error fetching movie details:", error);
