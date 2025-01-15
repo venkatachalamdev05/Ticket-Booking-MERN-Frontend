@@ -6,11 +6,12 @@ import Navbar from './Navbar';
 
 const ParticularMovies = (props) => {
     const { title } = useParams();
-    console.log(title);
+    
 
     const [selectedMovie, setSelectedMovie] = useState(null);
 
     useEffect(() => {
+        localStorage.setItem("movie",title)
         axios.get(`https://ticket-booking-mern-backend.onrender.com/movie-list/${title}`)
             .then((result) => {
                 // Access the first movie in the response array
